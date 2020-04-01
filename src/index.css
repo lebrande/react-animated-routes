@@ -24,7 +24,14 @@ code {
   height: 100%;
 }
 
-.Image {
+.App__title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.Animal {
   display: block;
   width: 100%;
   max-width: 500px;

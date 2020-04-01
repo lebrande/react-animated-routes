@@ -1,40 +1,26 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { animals } from '../animals';
+
 const Menu = () => {
   return (
     <nav className="Menu">
       <ul>
-        <li>
-          <NavLink
-            exact
-            activeClassName="Menu__link--active"
-            className="Menu__link"
-            to="/"
-          >
-            Panda
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            exact
-            activeClassName="Menu__link--active"
-            className="Menu__link"
-            to="/horse"
-          >
-            Horse
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            exact
-            activeClassName="Menu__link--active"
-            className="Menu__link"
-            to="/cat"
-          >
-            Cat
-          </NavLink>
-        </li>
+        {animals.map((animal) => {
+          return (
+            <li key={animal}>
+              <NavLink
+                exact
+                activeClassName="Menu__link--active"
+                className="Menu__link"
+                to={`/animal/${animal}`}
+              >
+                {animal}
+              </NavLink>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
