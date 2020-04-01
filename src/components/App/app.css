@@ -1,0 +1,16 @@
+.App {
+  background-color: #223;
+  height: 100vh;
+}
+
+.App__viewport {
+  position: relative;
+  height: 100%;
+}
+
+.App__title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}

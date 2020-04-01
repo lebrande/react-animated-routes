@@ -1,0 +1,24 @@
+.Page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Page__title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.Page__image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}

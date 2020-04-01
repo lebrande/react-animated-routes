@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
-
-import Animal from './Animal';
-import Menu from './Menu';
+import Page from '../Page/Page';
+import Menu from '../Menu/Menu';
+import './app.css';
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
                   <Route
                     exact
                     path="/animal/:id"
-                    component={Animal}
+                    component={Page}
                   />
                 </Switch>
               </AnimatePresence>

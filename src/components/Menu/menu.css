@@ -1,0 +1,29 @@
+.Menu {
+  background-color: #0006;
+}
+
+.Menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Menu li {
+  flex-grow: 1;
+}
+
+.Menu__link {
+  display: block;
+  padding: 1em;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.Menu__link:hover,
+.Menu__link--active {
+  background-color: #146;
+}

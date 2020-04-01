@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import { animals } from '../animals';
+import { animals } from '../../animals';
+import './menu.css';
 
 const Menu = () => {
   return (
